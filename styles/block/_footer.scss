@@ -1,0 +1,58 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    background: $color-2;
+    padding: 30px;
+    
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 24vh;
+    }
+    .footer__contact{
+        line-height: 1.6rem;
+        color: white;
+        text-align: center;
+        margin: 20px;
+        font-size: 17px;
+
+        @include desktop {
+            font-size: 17px;
+            text-align: left;
+        }
+
+        p {
+            a{
+                margin-left:0;
+            }
+        }
+
+        h6 {
+            font-size: 17px;
+            margin: 0px;
+            font-weight: 600;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            margin-left: 0;
+        }
+        .redes {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            
+            a{
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+    
+}

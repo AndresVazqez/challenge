@@ -1,0 +1,122 @@
+.container__gallery{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    margin: 40px auto;
+    
+
+    @include desktop {        
+        width: 67vw;
+        height: 140vh;        
+    }       
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        
+        @include desktop {
+            display: flex;
+            flex-direction: row;             
+            width: 100%;
+            height: 50%;            
+            margin-bottom: 20px;            
+        }           
+    
+        .gallery__item-1 {        
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            
+            
+            @include desktop {
+                width: 65%;        
+                height: 100%;                
+                margin-bottom: 0px;
+            }
+           
+            img {                
+                width: 100%;
+                height: 100%;                                      
+                            
+            }
+        }
+    
+        .gallery__item-2 {            
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            @include desktop {
+                width: 35%;        
+                height: 100%;               
+                margin-left: 20px;                
+            }  
+            
+            img {
+                object-fit: cover;                
+                width: 100%;
+                height: 100%;            
+            }
+    
+        }           
+     }
+
+     .gallery2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include desktop {            
+            flex-direction:row ;
+            align-items: center;                 
+            width: 100%;
+            height: 50%;         
+            
+        }
+
+        .gallery2__item-3 {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            
+
+            @include desktop {                
+                width: 35%;        
+                height: 100%;                
+                margin-right: 20px;
+                margin-bottom: 0px;
+            }
+
+            img {                                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .gallery2__item-4 {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            object-fit: cover;
+
+            @include desktop {
+                width: 65%;        
+                height: 100%;               
+                margin-bottom: 0px;
+            }
+
+            img {
+                object-fit: cover;                
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+
+     }
+         
+}
+

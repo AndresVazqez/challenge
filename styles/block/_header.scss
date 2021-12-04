@@ -1,0 +1,101 @@
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background: $primary-color;
+
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+        background: $primary-color;        
+        padding: 5px;
+        
+                     
+
+        @include desktop {
+            width: 50%;
+            height: 100%;            
+            justify-content: flex-end;
+            padding-right: 150px;
+            
+                         
+        }
+
+        a {
+            display: flex;            
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            
+            
+            @include desktop {
+                
+                width: 50%;
+                height: 70%;
+            }
+
+            img {                            
+                width: 100%;
+                height: 100%;
+                           
+                
+    
+                @include desktop {
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+    
+            }
+        }
+        
+        
+    }
+
+    .header__anch {
+        width: 70%;
+        height: 100%;
+        display: flex;       
+        align-items: center;
+        justify-content: flex-end;        
+        padding-right: 10px;
+        
+        @include desktop {
+            justify-content: flex-start;
+            padding-left: 20px;
+            width: 50%;
+            height: 100%;
+            
+        }
+
+        a {
+            color:black;           
+            font-size: 10px;
+            font-weight: 600;
+            margin: 8px;
+            text-decoration: none;
+            padding: 2px;
+
+            @include desktop {
+                font-size: 18px;
+                padding: 8px;
+
+            }
+
+            &:hover {
+                border: 2px solid white;
+            }
+            &:active {
+                text-decoration: line-through;
+                border: none;
+            }
+            
+
+        }
+    }
+}

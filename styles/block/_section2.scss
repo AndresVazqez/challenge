@@ -1,0 +1,79 @@
+
+.text{     
+    margin: 0 5vw;
+    
+    @include desktop {
+        margin: 0 25vw;
+
+     }
+
+
+    .text__title {                                        
+        font-size: 22px;
+        font-weight: 800;
+        text-decoration: underline;
+        text-decoration-color: $color-3;
+        text-decoration-style:dotted;          
+        
+        
+        
+    }
+    
+    .text__title-1 {
+        font-size: 19px;       
+        letter-spacing: 1px;
+        text-decoration: underline;
+        text-decoration-color: $color-3;
+        text-decoration-style:dotted;
+
+        h1 {
+            margin-bottom: 45px;
+            margin-top: -15px;
+        }       
+    
+    }
+
+    .text__pa {        
+        
+        @include desktop {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 60px;
+
+        }
+        
+
+        .text__pa-1 {               
+            font-size: 22px;
+            line-height: 1.6rem;
+            
+            @include desktop {
+                width: 100%;
+                height: 100%;            
+                
+            }
+            
+        
+        }
+        .text__pa-2 {            
+              
+            font-size: 19px;
+            margin-top: 40px;
+            line-height: 1.6rem;
+
+            @include desktop {
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+                p {
+                    padding-left: 30px;
+                }
+
+            }
+
+            
+            
+            
+        }
+    }
+}

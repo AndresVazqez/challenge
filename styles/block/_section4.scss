@@ -1,0 +1,102 @@
+
+.decorline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 1px;
+    margin: 90px auto;
+    border-bottom: 2px solid $color-4;
+
+    @include desktop {
+        width: 67vw;
+
+    }
+
+    a {       
+        color: black;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: white;
+        border: 2px solid $color-4;
+        text-decoration: none;
+        
+        &:hover {
+            border: 2px solid $color-5;
+            color: $color-5;
+
+        }
+    }
+}
+
+.logoburrito {
+    display: flex;
+    margin: 40px;
+    img{
+        margin: 0 auto;
+    }
+    
+}
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto 250px;    
+    width: 90vw;
+    height: 300px;
+    padding-bottom: 20px;
+
+    .message__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+        margin: 0 auto;
+        border: 2px solid $color-6;
+        width: 85vw;
+        padding: 15px 15px 40px 15px;        
+        
+        
+    
+        @include desktop {
+            width: 35vw;
+
+            p {
+                margin: 20px;
+            }
+    
+        }    
+        p {
+            line-height: 1.6rem;        
+            font-size: 20px;
+            text-align: center;        
+        }        
+        
+       
+    }
+    a { 
+        background: white;                   
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        width: 150px;
+        border: 2px solid $color-5;
+        margin: -25px auto;
+        
+        &:hover {
+            color: white;
+            background: $color-5;
+
+        }
+        
+    } 
+
+
+
+}
+
+     

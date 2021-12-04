@@ -1,0 +1,18 @@
+
+.hero {
+    display: flex;
+    width: 100vw;
+    height: 55vh;
+    background: $primary-color;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @include desktop {
+        width: 100vw;
+        height: 90vh;
+        margin-bottom: 80px;
+
+    }
+
+    
+}

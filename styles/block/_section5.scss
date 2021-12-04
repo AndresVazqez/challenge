@@ -1,0 +1,109 @@
+
+.container {
+    margin: -150px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 1320px;  
+    
+
+    @include desktop {
+        flex-direction: row;
+        width: 68vw;
+        height: 100%;
+        margin: -180px auto 100px;
+        
+        
+    }
+    
+
+    .container__card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;        
+        margin-bottom: 40px;
+
+        @include desktop {
+            justify-content: space-around;
+            margin: 20px;
+            height: 500px;
+
+            &:hover {
+                
+                box-shadow: 0px 0px 8px 3px $color-5;
+                
+            }
+        }
+        
+        .container__card-item {
+            display: flex;
+            flex-direction: column;            
+            width: 100%;
+            height: 60%;
+            
+            @include desktop {
+                height: 70%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+           
+        
+        }
+        .container__card-item-1 {
+            padding: 20px;
+            background: white;
+            width: 100%;
+            height: 40%;
+
+            @include desktop {
+                height: 30%;
+            }
+
+            p {
+                text-align: left;
+                color: $color-2;
+                font-size: 17px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            span {
+                text-align: left;
+                color: black;
+                line-height: 1.6rem;
+             }
+
+        }
+    
+    }
+        
+}
+
+.underline1 {
+    border-bottom: 8px solid $primary-color;
+
+}
+.underline2 {
+    border-bottom: 8px solid $color-2;
+
+}
+.underline3 {
+    border-bottom: 8px solid $color-5;
+
+}
+.backgroundCards {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background: $color-7;
+
+    @include desktop {
+        height: 100%;        
+    }
+
+}
